@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './Feedback.module.css';
 
 export const FeedbackOptions = ({ good, neutral, bad }) => {
@@ -14,4 +15,11 @@ export const FeedbackOptions = ({ good, neutral, bad }) => {
       </button>
     </ul>
   );
+};
+
+
+FeedbackOptions.propTypes = {
+  good: PropTypes.func.isRequired,
+  neutral: PropTypes.func.isRequired,
+  bad: PropTypes.func.isRequired,
 };
