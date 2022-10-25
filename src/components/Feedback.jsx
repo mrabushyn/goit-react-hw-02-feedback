@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import css from './Feedback.module.css';
+import PropTypes from 'prop-types';
+
 import { Statistics } from './Statistics';
 import { FeedbackOptions } from './FeedbackOptions';
 import { Section } from './Section';
 import { Notification } from './Notification';
-import css from './Feedback.module.css';
-import PropTypes from 'prop-types';
-
 
 export class Feedback extends Component {
   static props = {
@@ -103,11 +103,6 @@ Feedback.propTypes = {
   initialValue: PropTypes.number.isRequired,
   initialValuePercentage: PropTypes.number.isRequired,
 };
-  //   stats: PropTypes.arrayOf(
-  //     PropTypes.shape({
-  //       id: PropTypes.string.isRequired,
-  //       label: PropTypes.string.isRequired,
-  //       percentage: PropTypes.number.isRequired,
-  //     })
-  //   ),
+
+
 
